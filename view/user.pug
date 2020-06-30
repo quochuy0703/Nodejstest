@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title User
+        link(rel="stylesheet", type="text/css" ,href="css/css.css" )
+    body
+        h3 Danh sach user
+        a(href="/user/search") Tim kiem
+        .user
+            table
+                thead
+                    tr
+                        th Name
+                        th Mail
+                        th Age
+                tbody
+                each user in users
+                    tr
+                        td= user.name
+                        td= user.mail
+                        td= user.age

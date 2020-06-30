@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Tim kiem User
+    body
+        form
+            input(type="text",name="search" with="200px")
+            input(type="submit" value="submit" style="display:inline")
+            .user
+            if users.length > 0
+                table
+                    thead
+                        tr
+                            th Name
+                            th Info
+                    tbody
+                    each user in users
+                        tr
+                            td= user.name
+                            td 
+                                a(href='/user/showinfo/'+user.id) View
+            else
+                p khong tin thay user

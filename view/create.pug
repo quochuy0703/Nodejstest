@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title Tao user
+    body
+        h2 Tao user
+        form(action="/users/create" method="POST")
+            label(id="name")
+            input(type="text", placeholder="Your name", name="name")
+            label(id="email")
+            input(type="text", placeholder="Your email address", name="email")
+            label(id="age")
+            input(type="text", placeholder="Your age", name="age")
+            input(type="submit")
