@@ -7,7 +7,7 @@
       "start": "node test.js"
     },
     "dependencies": {
-      "crypto-js": "4.0.0",
+      "crypto-js": "4.2.0",
       "express": "4.17.1",
       "pug": "3.0.0"
     },
